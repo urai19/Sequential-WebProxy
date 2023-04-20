@@ -1,0 +1,26 @@
+Name: Udayan Rai
+netid: ur41
+
+Below is a description of the helper methods I created.
+
+void getMeth(char* request, char** method)
+    This method returns returns the GET/POST keyword from the HTTP request.
+
+void tokenize(char* request, char** method, char** hostname, char** filepath,
+               int* port, char** uri, char** version, char** headers, char** formatReq)
+    This method tokenizes the request and gives a tokenized, formatted version of the request.
+
+void getHostPort(char* request, char** hostname, int* port)
+    This method gives the hostname and port number.
+
+void getURI(char* request, char** uri)
+    This method gives the URI.
+
+void getVersion(char* request, char** version)
+    This method gives the version.
+
+void getHeaders(char* request, char** headers)
+    This method gives the headers of the HTTP request.
+
+void logReq(struct sockaddr_in* sockaddr, char* uri, int size);
+    This method logs the request to proxy.log
